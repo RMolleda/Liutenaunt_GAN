@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Uploaded files</h3>
+      </div>
+      <hr/>
+      <div>
+      This is a list of the files you just uploaded, click on them to load/download them
+      <ul>
+        {% for file in filenames %}
+          <li><a href="{{url_for('uploaded_file', filename=file)}}">{{file}}</a></li>
+        {% endfor %}
+      </ul>
+      <hr/>
+      <body>
+        <div class="container">
+          <div class="header">
+            <h3 class="text-muted">Select what u wanna do for Liutenaunt GAN</h3>
+          </div>
+          <hr/>
+          <div>
+          
+          <form action="/predict">
+            <input type="submit" value="Ejecutar GAN" class="span3" /><br />   
+<pre>
+This will take several minutes
+</pre>
+      </div>
+    </div>
+    <p>Roberto Molleda &copy; Copyright</p>
+  </body>
+</html>
+ 
