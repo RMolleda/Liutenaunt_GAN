@@ -206,5 +206,5 @@ def train_run(augmentator_func, cargar_imagenes_func):
 	gan_model = define_gan(g_model, d_model)
 	# load image data
 	dataset = load_real_samples(load_from=cargar_imagenes_func)
-	train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=10)
+	train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=20)
 
