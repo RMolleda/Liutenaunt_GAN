@@ -90,7 +90,7 @@ def define_gan(g_model, d_model):
 
 # load and prepare cifar10 training images
 def load_real_samples(load_from):
-	# load cifar10 dataset
+	# load the converted data with augmentation
 	trainX = load_from(folder=cwd + "\\Neural_project\\src\\api\\uploads\\new")
 	# convert from unsigned ints to floats
 	X = trainX.astype('float32')
