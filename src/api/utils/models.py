@@ -195,7 +195,7 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs, n_batch=12
 
 def train_run(augmentator_func, cargar_imagenes_func):
 	#augmentation of the uploads
-	augmentator_func(num_samples=20000)
+	augmentator_func(num_samples=25000)
 	# size of the latent space
 	latent_dim = 100
 	# create the discriminator
